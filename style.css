@@ -67,7 +67,9 @@ nav ul li a {
     color: black;
     text-decoration: none;
 }
-
+.hamberger{
+    display: none;
+}
 .pagess {
     background-color:#FAF9F6;
     color: black;
@@ -361,9 +363,33 @@ footer .follow{
     .logo a {
         margin-right: 10px; /* Adjust spacing between icon and text */
     }
-
+    #pages{
+        display: flex; /* Hide navigation */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -350px;
+        height: 100vh;
+        width: 300px;
+        background-color: #bc967b;
+        box-shadow: 0 40px 60px rgbs (0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #pages .active{
+        right: 0px;
+    }
+    .hamberger{
+        display: flex;
+        justify-content: right;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+    
     nav ul li {
-        margin-right: 10px;
+        margin-bottom: 25px;
     }
 
     .pagess ul li a {
@@ -379,7 +405,7 @@ footer .follow{
         flex-wrap: wrap;
     }
     .card{
-        margin: 15px;
+        margin: 10px;
     }
     .column {
         display: flex;
@@ -409,7 +435,6 @@ footer .follow{
 /* Mobile Styles */
 @media screen and (max-width: 500px) {
     .logo {
-        flex-direction: column;
         align-items: center;
         font-size:10px;
     }
@@ -417,17 +442,32 @@ footer .follow{
     .logo a {
         margin-bottom: 8px; /* Adjust spacing between icon and text */
     }
-
-    nav ul {
-        display: inline-block; /* Hide navigation */
-        /* flex-direction: column; */
-    }
-    nav ul a{
+     ul a{
         height: 48px;
     }
 
     .pagess ul li a {
         padding: 10px 5px;
+    }
+    .pagess{
+        display: flex; /* Hide navigation */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        height: 100vh;
+        width: 300px;
+        background-color: #bc967b;
+        box-shadow: 0 40px 60px rgbs (0,0,0,0.1);
+        padding: 80px 0 0 10px;
+    }
+    .hamberger{
+        display: flex;
+        justify-content: right;
+        margin-right: 15px;
+        margin-bottom: 5px;
     }
 
     .bgimg {
