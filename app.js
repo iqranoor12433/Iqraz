@@ -17,9 +17,21 @@
 // }
     
 const bar = document.getElementById('bar');
-const nav = document.getElementById('pages');
+const navv = document.getElementById('pages');
 if (bar){
     bar.addEventListener('click', ()=>{
-        nav.classList.add('active');
-    })
+        navv.classList.toggle('active');
+    });
 }
+
+let value=true;
+let button =document.getElementById("checkbox").addEventListener("click",()=>{
+    console.log("cliked")
+value=!value;
+if(value){
+    document.body.className="dark"
+}
+else{
+    document.body.classList.remove("dark")
+}
+})

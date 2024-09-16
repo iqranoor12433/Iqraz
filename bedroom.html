@@ -14,7 +14,7 @@
     <header>
         <div class="logo">
             <!-- <a href="#"><i class="fas fa-search"></i></a> -->
-            <h1>IQRAZ</h1>
+            <a class="anchorlogo" href="index.html"><h1>IQRAZ</h1></a>
         </div>
         <nav class="icons">
             <ul>
@@ -24,24 +24,27 @@
         </nav>
     </header>  
     <hr color="#cab8ab">
-    <nav class="pagess">
+    <nav id="pages" class="pagess">
         <ul>
+            <li><a href="" id="close"><i class="material-icons">close</i></a></li><br>
             <li><a href="index.html">HOME</a></li>
             <li><a href="living.html">LIVING</a></li>
             <li><a href="dining.html">DINING</a></li>
             <li><a href="bedroom.html">BEDROOM</a></li>
             <li><a href="outdoor.html">OUTDOOR</a></li>
         </ul>
-        <!-- <hr color="#cab8ab"> -->
     </nav>
+    <div id="bar" class="hamberger">
+        <i class="material-icons">menu</i>
+    </div>
     <section class="crd">
         <div>
             <P class="heading" >FEATURED PRODUCTS</P>
         </div>
-    </section>
+    </section> 
     <section class="card_contain">
-        <div class="cards">
-            <a href=""><img src="bedroom.pic/bedrrom.png" alt="Product" ></a>
+        <div class="cards" onclick="window.location.href='pro1.html'">
+            <img src="bedroom.pic/bedrrom.png" alt="Product" >
                 <div class="p-des">
                 <h2>Bed Name</h2>
                 <span>Bed Color</span>
@@ -50,7 +53,7 @@
                 </div>
         </div>
         <div class="cards">
-           <a href=""><img src="bedroom.pic/bedroom6.png" alt="Product" ></a>
+           <img src="bedroom.pic/bedroom6.png" alt="Product" >
            <div class="p-des">
             <h2>Bed Name</h2>
             <span>Bed Color</span>
@@ -59,7 +62,7 @@
             </div>
         </div>
         <div class="cards">
-            <a href=""><img src="bedroom.pic/bedroom4.png" alt="Product" ></a>
+            <img src="bedroom.pic/bedroom4.png" alt="Product" >
             <div class="p-des">
                 <h2>Bed Name</h2>
                 <span>Bed Color</span>
@@ -68,7 +71,7 @@
                 </div>
         </div>
         <div class="cards">
-            <a href=""><img src="bedroom.pic/bedroom2.png" alt="Product" ></a>
+            <img src="bedroom.pic/bedroom2.png" alt="Product" >
             <div class="p-des">
                 <h2>Bed Name</h2>
                 <span>Bed Color</span>
@@ -77,7 +80,7 @@
                 </div>
         </div>
         <div class="cards">
-            <a href=""><img src="bedroom.pic/bedroom3.png" alt="Product" ></a>
+            <img src="bedroom.pic/bedroom3.png" alt="Product" >
             <div class="p-des">
              <h2>Bed Name</h2>
              <span>Bed Color</span>
@@ -176,6 +179,16 @@
                 </div>
         </div>
     </section>
+    <section id="newsletter">
+        <div class="newstext">
+            <h2>Newsletter </h2>
+            <p>Sign up for promotions, decorating tips and more from our team.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter your Email">
+            <button class="btn">Sign Up</button>
+        </div>
+    </section>
 
     <footer>
         <div class="col">
@@ -215,5 +228,6 @@
     <div class="footer2">
         <p>&copy; 2024 Your Furniture Store. All rights reserved.</p> 
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

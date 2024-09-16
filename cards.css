@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}#close{
+    display: none;
 }
 .crd {
     background-color: #E0DBD7;
@@ -44,4 +46,143 @@ body {
 }
 .p-des i:hover{
     color: #bc967b;
+}
+/* Responsive Styles */
+
+/* Tablet Styles */
+@media screen and (max-width: 799px) {
+    .logo a {
+        margin-right: 10px; /* Adjust spacing between icon and text */
+    }
+    .hamberger {
+        display: flex;
+        justify-content: right;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+    #pages{
+        display: flex; /* Hide navigation */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -350px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E0DBD7;
+        box-shadow: 0 40px 60px rgba (0,0,0,0.1);
+        padding: 80px 0 10px;
+        transition: 0.3s;
+        z-index: 1;
+    }
+    #pages.active{
+        right: 0px;
+    }
+    #close{
+        display: initial;
+    }
+    #pages ul li{
+        list-style: none;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+    nav ul li {
+        margin-bottom: 25px;
+    }
+
+    .pagess ul li a {
+        padding: 10px;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cards{
+        margin: 0 20px 20px 30px;
+    }
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+        /* margin: 2px; */
+      }
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 15px;
+    }
+    footer .col a p{
+        text-decoration: none;
+        font-size: 16px;
+        padding-bottom: 8px;
+        color: #000;
+    }
+    footer .col{
+        margin: 10px;
+    }
+      .card_contain img{
+        width: 100%;
+        height: 200px;
+        display: block;
+        object-fit: cover;
+      } 
+}
+
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 500px) {
+    .logo {
+        align-items: center;
+        font-size:10px;
+    }
+
+    .logo a {
+        margin-bottom: 8px; /* Adjust spacing between icon and text */
+    }
+     ul a{
+        height: 48px;
+    }
+
+    .pagess ul li a {
+        padding: 10px 5px;
+    }
+    .pagess{
+        display: flex; /* Hide navigation */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        height: 100vh;
+        width: 300px;
+        background-color: #bc967b;
+        box-shadow: 0 40px 60px rgbs (0,0,0,0.1);
+        padding: 80px 0 0 10px;
+    }
+    .hamberger{
+        display: flex;
+        justify-content: right;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+
+    .bgimg {
+        padding: 50px;
+    }
+    .card_contain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      } 
+    .cards{
+        width: 40%;
+        height: auto;
+    }
+    .spacebtw{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 }

@@ -1,0 +1,48 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.cheading{
+    font-size: 20px;
+    text-align: center;
+    background-color:  #E0DBD7;
+}
+
+#cart{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart img{
+    width: 70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px ;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 200px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(5){
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cart i{
+    color: black;
+}
+#cart table thead{    
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}

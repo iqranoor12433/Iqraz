@@ -1,0 +1,125 @@
+/* General body styling */
+body {
+    background-color: #FAF9F6;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FAF9F6;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logg a{
+    color: #000;
+}
+
+.logg {
+    align-content: center;
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main section styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product detail section styling */
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E0DBD7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    margin-bottom: 10px;
+}
+
+.product-info .add-to-cart {
+    background-color: #cab8ab;
+    color: #000000;
+    height: 2.400rem;
+    width: 30%;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.product-info .add-to-cart:hover {
+    background: #c3a997;
+}
+
+.headipro{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+
+.card_contain{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+/* Footer styling
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+} */
